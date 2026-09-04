@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black border-b-[1px] border-[#1F2937]">
+        <div class="w-full max-w-[1280px] bg-black mx-auto p-3 flex">
+
+            <!-- LOGO -->
+            <div class="flex gap-1 items-center ">
+                <i class="fa-solid fa-dumbbell" style="color: rgb(234, 22, 22);"></i>
+                <h1 class="text-white text-[18px] font-[800]">IRON <span class="text-[#E52323]">FIT</span></h1>
+            </div>
+
+            <!-- NAVIGATION -->
+            <div
+                class=" hidden md:flex mx-auto w-full max-w-[296px] md:text-white text-[13px] flex place-content-between items-center font-[600]">
+                <a href="#Home">Home</a>
+                <a href="#Services">Services</a>
+                <a href="#Gallery">Gallery</a>
+                <a href="#Contact">Contact</a>
+            </div>
+
+            <!-- JOIN NOW -->
+            <div class="hidden md:flex">
+                <button class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px]">Join Now</button>
+            </div>
+
+            <!-- BAR -->
+            <div class="ml-auto text-[20px] cursor-pointer md:hidden">
+                <i class="fa-solid fa-bars" style="color: rgb(252, 251, 251);"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAGE 1 -->
+
+    <main #id="Home" class="bg-black py-12 lg:pt-24 ">
+        <!-- MAIN BOX -->
+        <div class="pl-2 lg:pl-0 w-full max-w-[1280px] mx-auto lg:flex lg:justify-between pb-12">
+            <!-- LEFT-SECTION  -->
+            <section class="lg:max-w-[592px] lg:mt-0 mt-8 lg:pl-5">
+                <div class="text-[#E52323] text-[12px] font-[500] lg:mt-8 mb-4">FITNESS • DISCIPLINE • A BETTER YOU</div>
+                <!-- HEADING -->
+                <h1 class="text-white text-[48px] font-[800] leading-[100%]">BUILD YOUR
+                    <span class="text-[#E52323]">STRONGEST</span> SELF
+                </h1>
+                <!-- PARA  -->
+                <p class="text-[#9CA3AF] text-[15px] mt-2 leading-[110%] lg:mt-4">Premium fitness training in Jaipur designed to help you become
+                    stronger, healthier, and more confident.</p>
+                <!-- BUTTONS  -->
+                 <div class="max-w-[296px] flex flex-col sm:flex-row gap-2 lg:mt-6">
+                    <button class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px] mt-4 mr-2 lg:px-8 py-2">Join Now</button>
+                    <button class="bg-transparent border-[1px] border-white text-white text-[12px] font-[600] px-3 py-2 rounded-[5px] mt-4 mr-2">Book a Free Trial</button>
+                 </div>
+                 <!-- INFO -->
+                  <div class="lg:mt-10">
+                    <div class="max-w-[592px] border-t border-[#1F2937] mt-4 pt-4 grid grid-cols-2 lg:grid-cols-3">
+                        <!-- INFO 1 -->
+                        <h3 class="text-white text-[24px] font-[900]">500+
+                            <p class="text-[#9CA3AF] text-[12px] font-[400]">Happy Members</p>
+                        </h3>
+                        
+                        <!-- INFO 2 -->
+                        <h3 class="text-white text-[24px] font-[900]">10+
+                            <p class="text-[#9CA3AF] text-[12px] font-[400]">Expert Trainers</p>
+                        </h3>
+                        
+                        <!-- INFO 3 -->
+                        <h3 class="text-white text-[24px] font-[900]">5+
+                            <p class="text-[#9CA3AF] text-[12px] font-[400]">Years of Experience</p>
+                        </h3>
+                        
+                    </div>
+                  </div>
+
+            </section>
+
+            <!-- RIGHT SECTION  -->
+        <section class="max-w-[592px] max-h-[500px] mt-8 lg:mt-0 rounded-[10px] overflow-hidden mx-2">
+            <img class="w-full h-full" src="Images/Hero.png" alt="">
+        </section>
+        </div>
+
+
+    </main>
+
+</body>
+
+</html>
