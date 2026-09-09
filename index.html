@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -35,7 +35,7 @@
             <div
                 class=" hidden md:flex mx-auto w-full max-w-[296px] md:text-white text-[13px] flex place-content-between items-center font-[600]">
                 <a href="#Home">Home</a>
-                <a href="#Services">Services</a>
+                <a href="#services">Services</a>
                 <a href="#Gallery">Gallery</a>
                 <a href="#Contact">Contact</a>
             </div>
@@ -54,9 +54,9 @@
 
     <!-- PAGE 1 -->
 
-    <main #id="Home" class="bg-black py-12 lg:pt-24 ">
+    <main class="bg-black py-12 lg:pt-24 ">
         <!-- MAIN BOX -->
-        <div class="pl-2 lg:pl-0 w-full max-w-[1280px] mx-auto lg:flex lg:justify-between pb-12">
+        <div id="Home" class="pl-2 lg:pl-0 w-full max-w-[1280px] mx-auto lg:flex lg:justify-between pb-12">
             <!-- LEFT-SECTION  -->
             <section class="lg:max-w-[592px] lg:mt-0 mt-8 lg:pl-5">
                 <div class="text-[#E52323] text-[12px] font-[500] lg:mt-8 mb-4">FITNESS • DISCIPLINE • A BETTER YOU</div>
@@ -68,7 +68,7 @@
                 <p class="text-[#9CA3AF] text-[15px] mt-2 leading-[110%] lg:mt-4">Premium fitness training in Jaipur designed to help you become
                     stronger, healthier, and more confident.</p>
                 <!-- BUTTONS  -->
-                 <div class="max-w-[296px] flex flex-col sm:flex-row gap-2 lg:mt-6">
+                 <div class="w-full flex flex-col sm:flex-row gap-2 lg:mt-6">
                     <button class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px] mt-4 mr-2 lg:px-8 py-2">Join Now</button>
                     <button class="bg-transparent border-[1px] border-white text-white text-[12px] font-[600] px-3 py-2 rounded-[5px] mt-4 mr-2">Book a Free Trial</button>
                  </div>
@@ -138,21 +138,24 @@
     <!-- PAGE 2 -->
 
     <main class="w-full bg-[#0B0C10] ">
-        <div class="p-7">
+        <!-- SERVICES -->
+        <div id="services" class="p-7 flex flex-col items-center">
             <div class="flex flex-col items-center">
                 <h6 class="text-[#E52323] text-[12px] font-[700]">OUR SERVICES</h6>
                 <p class="text-[#FFFFFF] text-[30px] font-[900]">MEMBERSHIP PLANS</p>
+                <!-- PLANS -->
                 <div class="max-w-[269px] bg-[#16181E] flex rounded-2xl mt-5 border border-[#1F2937]">
                     <div class="w-[88px] p-1 text-center text-white bg-[#E52323] rounded-2xl">Monthly</div>
                     <div class="w-[95px] p-1 text-center text-[#9CA3AF]">Quarterly</div>
                     <div class="w-[76px] p-1 text-center text-[#9CA3AF]">Yearly</div>
                 </div>
             </div>
-            <div class="max-w-[1232px] grid grid-col-1 mt-8">
-                <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 border border-[#1F2937] rounded-xl">
+            <!-- MONTH PLANS DETAILS -->
+            <div class="max-w-[1232px] grid grid-cols-1 mt-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
+                <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 md:pr-7 border border-[#1F2937] rounded-xl">
                     <p class="text-[#9CA3AF] text-[14px] font-[700] mt-5">BASIC</p>
                     <h1 class="text-white text-[36px] font-[800]">₹999 <span class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
-                    <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-1 mt-3">
+                    <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-2 mt-3">
                         <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
                              Gym Access
                         </p>
@@ -166,13 +169,64 @@
                               Free WiFi
                         </p>
                     </div>
+                    <div class="max-w-[323px] border border-white text-white text-center mt-10 p-2 text-[14px] font-[600] rounded-lg">Get Started</div>
+                </div>
+
+                <!-- QUARTERLY PLANS DETAILS -->
+                 <!-- top-[-13px] left-[140px] -->
+                <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 mt-6 md:mt-0 md:pr-7 border-[3px] border-[#E52323] rounded-xl relative">
+                    <div class="w-[104px] bg-[#E52323] text-white text-[10px] font-[700] text-center rounded-sm absolute top-[-13px] left-[95px] md:top-[-13px] md:left-[105px] p-1">MOST POPULAR</div>
+                    <p class="text-[#9CA3AF] text-[14px] font-[700] mt-5">STANDARD</p>
+                    <h1 class="text-white text-[36px] font-[800]">₹1,499 <span class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
+                    <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-3 mt-3">
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                             Gym Access
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                               Cardio & Strength Training
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                               Group Classes (Yoga, Zumba)
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                               Locker Room + Shower
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                                Nutrition Guidance
+                        </p>
+                    </div>
+                    <div class="max-w-[323px] bg-[#E52323] text-white text-center mt-6 p-2 text-[14px] font-[600] rounded-lg">Get Started</div>
+                </div>
+
+                <!-- YEARLY PLANS DETAILS -->
+                <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 mt-6 md:pr-7 lg:mt-0 border border-[#1F2937] rounded-xl">
+                    <p class="text-[#9CA3AF] text-[14px] font-[700] mt-5">PREMIUM</p>
+                    <h1 class="text-white text-[36px] font-[800]">₹2,499 <span class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
+                    <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-3 mt-3">
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                              All Standard Features
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                               Personal Training (4 Sessions/Month)
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                               Customized Diet Plan
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                               Priority Support
+                        </p>
+                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
+                                Access to Special Workshops
+                        </p>
+                    </div>
                     <div class="max-w-[323px] border border-white text-white text-center mt-6 p-2 text-[14px] font-[600] rounded-lg">Get Started</div>
                 </div>
-                <div></div>
-                <div></div>
             </div>
         </div>
     </main>
+
+    <!-- PAGE 3 -->
+
 </body>
 
 </html>
