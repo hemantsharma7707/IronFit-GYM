@@ -8,32 +8,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
         integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
         * {
             font-family: "Geist", sans-serif;
         }
     </style>
     <title>Iron Fit</title>
+    <link rel="icon" type="image/svg+xml" href="Images/dumbbell-solid-full (1).svg">
 </head>
 
 <body>
 
     <!-- HEADER  -->
-
-    <header class="fixed top-0 left-0 w-full z-50 bg-black border-b-[1px] border-[#1F2937]">
+     
+    <header class="sticky top-0 z-50 w-full bg-black border-b border-[#1F2937]">
         <div class="w-full max-w-[1280px] bg-black mx-auto p-3 flex">
 
             <!-- LOGO -->
-            <div class="flex gap-1 items-center ">
-                <i class="fa-solid fa-dumbbell" style="color: rgb(234, 22, 22);"></i>
+            <div class="flex gap-1 items-center transition duration-300 hover:scale-110">
+                <i class="fa-solid fa-dumbbell text-[#E52323]"></i>
                 <h1 class="text-white text-[18px] font-[800]">IRON <span class="text-[#E52323]">FIT</span></h1>
             </div>
 
             <!-- NAVIGATION -->
             <div
-                class=" hidden md:flex mx-auto w-full max-w-[296px] md:text-white text-[13px] flex place-content-between items-center font-[600]">
+                class=" hidden md:flex mx-auto w-full max-w-[296px] md:text-white text-[13px] flex place-content-between items-center font-[600] transition duration-300 hover:scale-110">
                 <a href="#Home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#Gallery">Gallery</a>
@@ -42,7 +46,9 @@
 
             <!-- JOIN NOW -->
             <div class="hidden md:flex">
-                <button class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px]">Join Now</button>
+                <button
+                    class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px] transition duration-300 hover:scale-110">
+                    Join Now</button>
             </div>
 
             <!-- BAR -->
@@ -54,51 +60,57 @@
 
     <!-- PAGE 1 -->
 
-    <main class="bg-black py-12 lg:pt-24 ">
+    <main class="bg-black py-1 lg:pt-24 ">
         <!-- MAIN BOX -->
         <div id="Home" class="pl-2 lg:pl-0 w-full max-w-[1280px] mx-auto lg:flex lg:justify-between pb-12">
             <!-- LEFT-SECTION  -->
             <section class="lg:max-w-[592px] lg:mt-0 mt-8 lg:pl-5">
-                <div class="text-[#E52323] text-[12px] font-[500] lg:mt-8 mb-4">FITNESS • DISCIPLINE • A BETTER YOU</div>
+                <div class="text-[#E52323] text-[12px] font-[500] lg:mt-8 mb-4">FITNESS • DISCIPLINE • A BETTER YOU
+                </div>
                 <!-- HEADING -->
                 <h1 class="text-white text-[48px] font-[800] leading-[100%]">BUILD YOUR
                     <span class="text-[#E52323]">STRONGEST</span> SELF
                 </h1>
                 <!-- PARA  -->
-                <p class="text-[#9CA3AF] text-[15px] mt-2 leading-[110%] lg:mt-4">Premium fitness training in Jaipur designed to help you become
+                <p class="text-[#9CA3AF] text-[15px] mt-2 leading-[110%] lg:mt-4">Premium fitness training in Jaipur
+                    designed to help you become
                     stronger, healthier, and more confident.</p>
                 <!-- BUTTONS  -->
-                 <div class="w-full flex flex-col sm:flex-row gap-2 lg:mt-6">
-                    <button class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px] mt-4 mr-2 lg:px-8 py-2">Join Now</button>
-                    <button class="bg-transparent border-[1px] border-white text-white text-[12px] font-[600] px-3 py-2 rounded-[5px] mt-4 mr-2">Book a Free Trial</button>
-                 </div>
-                 <!-- INFO -->
-                  <div class="lg:mt-10">
-                    <div class="max-w-[592px] border-t border-[#1F2937] mt-4 pt-4 grid grid-cols-2 lg:grid-cols-3">
+                <div class="w-full flex flex-col sm:flex-row gap-2 lg:mt-6">
+                    <button
+                        class="bg-[#E52323] text-[12px] font-[600] text-white px-3 py-1 rounded-[5px] mt-4 mr-2 lg:px-8 py-2 transition duration-300 md:hover:scale-110">Join
+                        Now</button>
+                    <button
+                        class="bg-transparent border-[1px] border-white text-white text-[12px] font-[600] px-3 py-2 rounded-[5px] mt-4 mr-2 transition duration-300 md:hover:scale-110">Book
+                        a Free Trial</button>
+                </div>
+                <!-- INFO -->
+                <div class="lg:mt-10">
+                    <div class="max-w-[592px] border-t border-[#1F2937] mt-4 pt-4 grid grid-cols-2 lg:grid-cols-3 ">
                         <!-- INFO 1 -->
                         <h3 class="text-white text-[24px] font-[900]">500+
                             <p class="text-[#9CA3AF] text-[12px] font-[400]">Happy Members</p>
                         </h3>
-                        
+
                         <!-- INFO 2 -->
                         <h3 class="text-white text-[24px] font-[900]">10+
                             <p class="text-[#9CA3AF] text-[12px] font-[400]">Expert Trainers</p>
                         </h3>
-                        
+
                         <!-- INFO 3 -->
                         <h3 class="text-white text-[24px] font-[900]">5+
                             <p class="text-[#9CA3AF] text-[12px] font-[400]">Years of Experience</p>
                         </h3>
-                        
+
                     </div>
-                  </div>
+                </div>
 
             </section>
 
             <!-- RIGHT SECTION  -->
-        <section class="max-w-[592px] max-h-[500px] mt-8 lg:mt-0 rounded-[10px] overflow-hidden mx-2">
-            <img class="w-full h-full" src="Images/Hero.png" alt="">
-        </section>
+            <section class="max-w-[592px] max-h-[500px] mt-8 lg:mt-0 rounded-[10px] overflow-hidden mx-2">
+                <img class="w-full h-full" src="Images/image.png" alt="">
+            </section>
         </div>
 
     </main>
@@ -108,28 +120,32 @@
         <div class="w-full max-w-[1232px] m-auto mt-5 pb-14">
             <h5 class="text-[#E52323] font-[700] text-[12px] text-center">WHY CHOOSE US</h5>
             <p class="text-center font-[900] text-[25px]">MORE THAN JUST A GYM</p>
-            
+
             <!-- FEATURES -->
             <div class=" w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 sm:gap-5 xl:gap-0 gap-4 xl:mt-8 mt-5">
-                <div class=" w-[180px] lg:w-[284px] mx-auto text-center">
-                    <i class="fa-solid fa-dumbbell" style="color: rgb(234, 22, 22);"></i>
+                <div class=" w-[180px] lg:w-[284px] mx-auto text-center ">
+                    <i class="fa-solid fa-dumbbell text-[#E52323] transition duration-300 hover:scale-160"></i>
                     <h1 class="font-[700] text-[15px] xl:mt-2">Modern Equipment</h1>
-                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">World class machines and facilities to help you perform.</p>
+                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">World class machines and
+                        facilities to help you perform.</p>
                 </div>
                 <div class=" w-[180px] lg:w-[284px] mx-auto text-center">
-                    <i class="fa-solid fa-users" style="color: rgb(231, 14, 14);"></i>
+                    <i class="fa-solid fa-users text-[#E52323] transition duration-300 hover:scale-160"></i>
                     <h1 class="font-[700] text-[15px] xl:mt-2">Certified Trainers</h1>
-                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">Learn from experienced fitnessprofessionals.</p>
+                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">Learn from experienced
+                        fitnessprofessionals.</p>
                 </div>
                 <div class=" w-[180px] lg:w-[284px] mx-auto text-center">
-                    <i class="fa-solid fa-heart" style="color: rgb(231, 14, 14);"></i>
+                    <i class="fa-solid fa-heart text-[#E52323] transition duration-300 hover:scale-160"></i>
                     <h1 class="font-[700] text-[15px] xl:mt-2">Personalized Plans</h1>
-                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">WPlans tailored specifically to your body and goals.</p>
+                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">WPlans tailored specifically to
+                        your body and goals.</p>
                 </div>
                 <div class=" w-[180px] lg:w-[284px] mx-auto text-center">
-                    <i class="fa-solid fa-star" style="color: rgb(231, 14, 14);"></i>
+                    <i class="fa-solid fa-star text-[#E52323] transition duration-300 hover:scale-160"></i>
                     <h1 class="font-[700] text-[15px] xl:mt-2">Supportive Community</h1>
-                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">Be part of a motivating, high-energy fitness family.</p>
+                    <p class="text-[#4B5563] text-[10px] leading-[100%] font-[400] mt-1">Be part of a motivating,
+                        high-energy fitness family.</p>
                 </div>
             </div>
         </div>
@@ -145,7 +161,9 @@
                 <p class="text-[#FFFFFF] text-[30px] font-[900]">MEMBERSHIP PLANS</p>
                 <!-- PLANS -->
                 <div class="max-w-[269px] bg-[#16181E] flex rounded-2xl mt-5 border border-[#1F2937]">
-                    <div class="w-[88px] p-1 text-center text-white bg-[#E52323] rounded-2xl">Monthly</div>
+                    <div
+                        class="w-[88px] p-1 text-center text-white bg-[#E52323] rounded-2xl transition duration-300 hover:scale-90">
+                        Monthly</div>
                     <div class="w-[95px] p-1 text-center text-[#9CA3AF]">Quarterly</div>
                     <div class="w-[76px] p-1 text-center text-[#9CA3AF]">Yearly</div>
                 </div>
@@ -154,71 +172,84 @@
             <div class="max-w-[1232px] grid grid-cols-1 mt-8 md:grid-cols-2 md:gap-5 lg:grid-cols-3">
                 <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 md:pr-7 border border-[#1F2937] rounded-xl">
                     <p class="text-[#9CA3AF] text-[14px] font-[700] mt-5">BASIC</p>
-                    <h1 class="text-white text-[36px] font-[800]">₹999 <span class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
+                    <h1 class="text-white text-[36px] font-[800]">₹999 <span
+                            class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
                     <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-2 mt-3">
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                             Gym Access
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Gym Access
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                              Basic Training Guidance
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Basic Training Guidance
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                              Access to Locker Room
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Access to Locker Room
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                              Free WiFi
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Free WiFi
                         </p>
                     </div>
-                    <div class="max-w-[323px] border border-white text-white text-center mt-10 p-2 text-[14px] font-[600] rounded-lg">Get Started</div>
+                    <div
+                        class="max-w-[323px] border border-white text-white text-center mt-10 p-2 text-[14px] font-[600] rounded-lg transition duration-300 hover:scale-105">
+                        Get Started</div>
                 </div>
 
                 <!-- QUARTERLY PLANS DETAILS -->
-                <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 mt-6 md:mt-0 md:pr-7 border-[3px] border-[#E52323] rounded-xl relative">
-                    <div class="w-[104px] bg-[#E52323] text-white text-[10px] font-[700] text-center rounded-sm absolute top-[-13px] left-[95px] md:top-[-13px] md:left-[105px] p-1">MOST POPULAR</div>
+                <div
+                    class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 mt-6 md:mt-0 md:pr-7 border-[3px] border-[#E52323] rounded-xl relative">
+                    <div
+                        class="w-[104px] bg-[#E52323] text-white text-[10px] font-[700] text-center rounded-sm absolute top-[-13px] left-[95px] md:top-[-13px] md:left-[105px] p-1">
+                        MOST POPULAR</div>
                     <p class="text-[#9CA3AF] text-[14px] font-[700] mt-5">STANDARD</p>
-                    <h1 class="text-white text-[36px] font-[800]">₹1,499 <span class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
+                    <h1 class="text-white text-[36px] font-[800]">₹1,499 <span
+                            class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
                     <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-3 mt-3">
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                             Gym Access
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Gym Access
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                               Cardio & Strength Training
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Cardio & Strength Training
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                               Group Classes (Yoga, Zumba)
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Group Classes (Yoga, Zumba)
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                               Locker Room + Shower
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Locker Room + Shower
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                                Nutrition Guidance
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Nutrition Guidance
                         </p>
                     </div>
-                    <div class="max-w-[323px] bg-[#E52323] text-white text-center mt-6 p-2 text-[14px] font-[600] rounded-lg">Get Started</div>
+                    <div
+                        class="max-w-[323px] bg-[#E52323] text-white text-center mt-6 p-2 text-[14px] font-[600] rounded-lg transition duration-300 hover:scale-105">
+                        Get Started</div>
                 </div>
 
                 <!-- YEARLY PLANS DETAILS -->
-                <div class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 mt-6 md:pr-7 lg:mt-0 border border-[#1F2937] rounded-xl">
+                <div
+                    class="max-w-[389px] bg-[#16181E] p-2 pl-8 pb-8 mt-6 md:pr-7 lg:mt-0 border border-[#1F2937] rounded-xl">
                     <p class="text-[#9CA3AF] text-[14px] font-[700] mt-5">PREMIUM</p>
-                    <h1 class="text-white text-[36px] font-[800]">₹2,499 <span class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
+                    <h1 class="text-white text-[36px] font-[800]">₹2,499 <span
+                            class="text-[#9CA3AF] text-[12px] font-[400]">/ month</span></h1>
                     <div class="text-[#D1D5DB] text-[14px] font-[350] flex flex-col gap-3 mt-3">
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                              All Standard Features
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            All Standard Features
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                               Personal Training (4 Sessions/Month)
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Personal Training (4 Sessions/Month)
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                               Customized Diet Plan
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Customized Diet Plan
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                               Priority Support
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Priority Support
                         </p>
-                        <p><i class="fa-solid fa-check" style="color: rgb(231, 14, 14);"></i>
-                                Access to Special Workshops
+                        <p><i class="fa-solid fa-check text-[#E52323]"></i>
+                            Access to Special Workshops
                         </p>
                     </div>
-                    <div class="max-w-[323px] border border-white text-white text-center mt-6 p-2 text-[14px] font-[600] rounded-lg">Get Started</div>
+                    <div
+                        class="max-w-[323px] border border-white text-white text-center mt-6 p-2 text-[14px] font-[600] rounded-lg transition duration-300 hover:scale-105">
+                        Get Started</div>
                 </div>
             </div>
         </div>
@@ -227,19 +258,52 @@
     <!-- PAGE 3 -->
 
     <main id="Gallery">
-            <div class="w-full max-w-[1280px] p-7 mt-4 m-auto">
-                <div class="text-center lg:text-start">
-                    <p class="text-[#E52323] text-[12px] font-[700]">OUR GALLERY</p>
-                    <h3 class="text-[30px] font-[900]">INSIDE IRONFIT</h3>
-                </div>
-                <!-- GYM IMAGES  -->
-                <div class="w-full max-w-[1232] grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 sm:justify-items-center lg:grid-cols-4">
-                    <div><img class="w-full sm:max-w-[500px] lg:max-w-[296px] rounded-lg shadow-xl" src="Images/b3898a0515af6f6ce3292b0a31e8d92fe115c8ab.png" alt=""></div>
-                    <div><img class="w-full sm:max-w-[500px] lg:max-w-[296px] rounded-lg shadow-xl" src="Images/3223f19831fe24e399a74dc068e3ba8f2abd201f.png" alt=""></div>
-                    <div><img class="w-full sm:max-w-[500px] lg:max-w-[296px] rounded-lg shadow-xl" src="Images/9ffa5c686c6e65d654c4a6475d1eeb43b3850321.png" alt=""></div>
-                    <div><img class="w-full sm:max-w-[500px] lg:max-w-[296px] rounded-lg shadow-xl" src="Images/e301d64dd15f5748735ce161f5fab370df5ceaaf.png" alt=""></div>
-                </div>
+        <div class="w-full max-w-[1280px] p-7 mt-4 m-auto">
+            <div class="text-center lg:text-start">
+                <p class="text-[#E52323] text-[12px] font-[700]">OUR GALLERY</p>
+                <h3 class="text-[30px] font-[900]">INSIDE IRONFIT</h3>
             </div>
+            <!-- GYM IMAGES  -->
+            <div
+                class="w-full max-w-[1232] grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 sm:justify-items-center lg:grid-cols-4">
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[242px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/pexels-foadshariyati-29639963-1.jpg"></div>
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[242px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/hustlrs-iron-den-manoshipara-kolkata-gyms-o3ion3fklu.webp" alt=""></div>
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[242px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/images-1.jpg" alt=""></div>
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[242px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/images.jpg" alt=""></div>
+            </div>
+        </div>
+
+        <div class="w-full max-w-[1280px] p-7 m-auto">
+            <div class="text-center lg:text-start">
+                <p class="text-[#E52323] text-[12px] font-[700]">PREMIUM</p>
+                <h3 class="text-[30px] font-[900]">EQUIPMENTS</h3>
+            </div>
+            <!-- GYM IMAGES  -->
+            <div
+                class="w-full max-w-[1232] grid grid-cols-1 gap-5 mt-5 sm:grid-cols-2 sm:justify-items-center lg:grid-cols-4">
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[388px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/ABDOMINAL PLATE LOAD.jpg" alt=""></div>
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[388px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/sports-equipment-dumbbells-gym_169016-59099.avif" alt=""></div>
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[388px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/photo-1590487988256-9ed24133863e.avif" alt=""></div>
+                <div><img
+                        class="w-full sm:max-w-[500px] lg:max-w-[296px] h-[388px] rounded-lg shadow-2xl transition duration-300 hover:scale-105"
+                        src="Images/true-athlen-sports-and-fitness-bengali-kothi-dehradun-cricket-bat-dealers-bdm-939q1ganfy.webp"
+                        alt=""></div>
+            </div>
+        </div>
     </main>
 
     <!-- PAGE 3-TESTIMONIALS -->
@@ -252,9 +316,12 @@
             </div>
             <!-- REVIEWS -->
             <div class="w-full max-w-[1232px] grid grid-cols-1 justify-items-center md:grid-cols-2 lg:grid-cols-3">
-                <img class="w-full max-w-[394px]" src="Images/image1.png" alt="">
-                <img class="w-full max-w-[394px]" src="Images/image2.png" alt="">
-                <img class="w-full max-w-[394px]" src="Images/image3.png" alt="">
+                <img class="w-full max-w-[394px] transition duration-300 hover:scale-105" src="Images/image1.png"
+                    alt="">
+                <img class="w-full max-w-[394px] transition duration-300 hover:scale-105" src="Images/image2.png"
+                    alt="">
+                <img class="w-full max-w-[394px] transition duration-300 hover:scale-105" src="Images/image3.png"
+                    alt="">
             </div>
         </div>
     </main>
@@ -262,48 +329,62 @@
     <!-- PAGE 4 -->
 
     <main>
-        <div id="Contact" class="w-full max-w-[1280px] m-auto p-7 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-20 pb-10">
+        <div id="Contact"
+            class="w-full max-w-[1280px] m-auto p-7 mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-20 pb-10">
 
             <!-- CONTACT DETAILS -->
             <div class="w-full max-w-[378px]">
                 <p class="text-[#E52323] text-[12px] font-[700]">GET IN TOUCH</p>
                 <h3 class="text-[30px] font-[900]">VISIT US TODAY</h3>
-                <p class="text-[#4B5563] text-[12px] font-[400] mt-2">Have questions or ready to start your fitness journey? We're here
-                   to help.</p>
+                <p class="text-[#4B5563] text-[12px] font-[400] mt-2">Have questions or ready to start your fitness
+                    journey? We're here
+                    to help.</p>
                 <div class="text-[#1F2937] text-[12px] font-[500] mt-7 flex flex-col gap-4">
-                    <p><i class="fa-solid fa-phone" style="color: rgb(231, 14, 14);"></i> +91 98765 43210</p>
-                    <p><i class="fa-solid fa-envelope" style="color: rgb(231, 14, 14);"></i> info@ironfitjaipur.com</p>
-                    <p><i class="fa-solid fa-location-dot" style="color: rgb(231, 14, 14);"></i> 123, Tonk Road, Jaipur, Rajasthan 302018</p>
-                    <p><i class="fa-solid fa-clock" style="color: rgb(231, 14, 14);"></i> Mon - Sun: 6:00 AM - 11:00 PM</p>
+                    <p><i class="fa-solid fa-phone text-[#E52323]"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-envelope text-[#E52323]"></i> info@ironfitjaipur.com</p>
+                    <p><i class="fa-solid fa-location-dot text-[#E52323]"></i> 123, Tonk Road, Jaipur, Rajasthan 302018
+                    </p>
+                    <p><i class="fa-solid fa-clock text-[#E52323]"></i> Mon - Sun: 6:00 AM - 11:00 PM</p>
                 </div>
             </div>
 
             <div class="w-full max-w-[378px] mt-5 sm:mt-0">
-                 <form>
+                <form>
                     <!-- Name and Phone -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-2">
-                    <label for="name">
-                        <input class="w-full bg-[#F3F4F6] p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition" type="text" placeholder="Your Name ">
-                    </label>
-                    <label for="Phone">
-                        <input class="w-full bg-[#F3F4F6] mt-3 sm:mt-0 p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition" type="text" placeholder="Your Phone Number ">
-                    </label>
+                        <label for="name">
+                            <input
+                                class="w-full bg-[#F3F4F6] p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition shadow-lg"
+                                type="text" placeholder="Your Name ">
+                        </label>
+                        <label for="Phone">
+                            <input
+                                class="w-full bg-[#F3F4F6] mt-3 sm:mt-0 p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition shadow-lg"
+                                type="text" placeholder="Your Phone Number ">
+                        </label>
                     </div>
                     <!-- FORM -->
-                    <select class="w-full bg-[#F3F4F6] mt-3 p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition" >
+                    <select
+                        class="w-full bg-[#F3F4F6] mt-3 p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition shadow-lg">
                         <option value="">Select Serivice</option>
                         <option value="1">1 Month</option>
                         <option value="3">3 Month</option>
                         <option value="12">12 Month</option>
                     </select>
-                    <textarea class="w-full h-30 bg-[#F3F4F6] mt-3 p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition" placeholder="Your Message"></textarea>
-                    <button class="w-full bg-[#E52323] p-3 text-white text-[12px] font-[600] rounded-lg">Send Message</button>
-                 </form>
+                    <textarea
+                        class="w-full h-30 bg-[#F3F4F6] mt-3 p-3 border border-[#E5E7EB] rounded-lg outline-none focus:border-red-500 transition shadow-lg"
+                        placeholder="Your Message"></textarea>
+                    <button class="w-full bg-[#E52323] p-3 text-white text-[12px] font-[600] rounded-lg shadow-lg">Send
+                        Message</button>
+                </form>
             </div>
-            
-            <div class="mt-4 lg:mt-0 relative">
-                <img class="max-w-[376px] h-75 rounded-xl z-10 " src="Images/Screenshot 2026-09-11 at 7.45.00 PM.png" alt="">
-                <div class="max-w-[129px] bg-[#FFFFFF] absolute top-2 left-2 z-40 border border-[#E5E7EB] text-center text-[#1A73E8] p-2 rounded-lg">Open in maps<a href="https://maps.app.goo.gl/b6am98FQ5PsXDaUf8"></a></div>
+            <!-- MAPS -->
+            <div class="mt-4 lg:mt-0 relative transition duration-300 hover:scale-105">
+                <img class="max-w-[376px] h-75 rounded-xl z-10 " src="Images/Screenshot 2026-09-11 at 7.45.00 PM.png"
+                    alt="">
+                <div
+                    class="max-w-[129px] bg-[#FFFFFF] absolute top-2 left-2 z-40 border border-[#E5E7EB] text-center text-[#1A73E8] p-2 rounded-lg">
+                    <a href="https://maps.app.goo.gl/b6am98FQ5PsXDaUf8">Open in maps</a></div>
             </div>
         </div>
     </main>
@@ -321,9 +402,9 @@
                 </ul>
             </div>
             <div class="text-[#6B7280] text-[12px] font-[400] flex justify-center items-center gap-2">
-                <i class="fa-brands fa-instagram" style="color: rgb(193, 218, 241);"></i>
-                <i class="fa-brands fa-facebook-f" style="color: rgb(193, 218, 241);"></i>
-                <i class="fa-brands fa-youtube" style="color: rgb(193, 218, 241);"></i>
+                <i class="fa-brands fa-instagram text-[#C1DAF1]"></i>
+                <i class="fa-brands fa-facebook-f text-[#C1DAF1]"></i>
+                <i class="fa-brands fa-youtube text-[#C1DAF1]"></i>
                 <p>Train Hard. Stay Strong. Be Better.</p>
             </div>
         </div>
