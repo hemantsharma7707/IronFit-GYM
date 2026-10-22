@@ -5,8 +5,6 @@ The website provides information about gym memberships, services, gallery, testi
 
 🌐 Live Demo
 
-👉 Add your deployed website link here:
-
 [https://your-live-demo-link.com](https://iron-fit-gym-delta.vercel.app/)
 
 ⸻
